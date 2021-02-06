@@ -1,0 +1,95 @@
+/* ## RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #010409;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+input {
+  margin: 10px 0;
+  width: 100%;
+  outline: 0;
+  border: thin solid #010409;
+  padding: 7px 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+:disabled {
+  background-color: #ccc;
+  cursor: not-allowed
+}
+
+
+
+/* ## MAIN  */
+
+main {
+  min-height: 60%;
+  max-height: 100%;
+}
+
+/* * CONFIRMATION */
+
+.boxConfirmation {
+  display: flex;
+  justify-content: center
+}
+
+.confirmation {
+  padding: 20px 35px;
+  width: 50%;
+}
+
+.confirmation .message {
+  padding: 35px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: thin solid #ddd;
+}
+
+.confirmation .actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirmation .actions button {
+  margin: 5px;
+  color: #666;
+}
+
+.confirmation .actions button.cancel {
+  background-color: #F8D7DA
+}
+
+.confirmation .actions button.success {
+  background-color: #D4EDDA
+}
