@@ -1,0 +1,61 @@
+{
+    "user": [
+      {
+        "id": 0,
+        "is_active": true,
+        "is_admin": false,
+        "nome": "Thiago",
+        "email": "ty2@teste.com",
+        "senha": "xxxxxx"
+      },
+      {
+        "id": 1,
+        "is_active": true,
+        "is_admin": false,
+        "nome": "Juliana",
+        "email": "ju@teste.com",
+        "senha": "xxxxxxx"
+      },
+      {
+        "id": 2,
+        "is_active": true,
+        "is_admin": true,
+        "nome": "Joao",
+        "email": "ju@teste.com",
+        "senha": "xxxxxxxxxxxxxxx"
+      },
+      {
+        "id": 3,
+        "is_active": true,
+        "is_admin": false,
+        "nome": "Felipe",
+        "email": "new@teste.com",
+        "senha": "1234566"
+      },
+      {
+        "id": 4,
+        "is_active": true,
+        "is_admin": false,
+        "nome": "New2",
+        "email": "new2@bootcamp.com",
+        "senha": "123456"
+      },
+      {
+        "is_active": true,
+        "is_admin": false,
+        "name": "Luiz",
+        "email": "luiz@xxxxxxxxxx.com.br",
+        "senha": "12345",
+        "id": 5
+      },
+      {
+        "is_active": true,
+        "is_admin": false,
+        "name": "Fabiano",
+        "email": "fabi@heauhe.com.br",
+        "senha": "54321",
+        "id": 6
+      }
+    ]
+  }
+  

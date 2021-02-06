@@ -6,6 +6,7 @@ import './user.css'
 import Nav from '../layout/nav/nav'
 import { useHistory, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+import { FormGroup, CustomInput } from 'reactstrap';
 
 const UserCreate = (props) => {
 
@@ -90,27 +91,33 @@ const UserCreate = (props) => {
 
                 <div className="create_user">
                     <div className="form_login">
-                        <div>
+                        <FormGroup>
                             <label htmlFor="auth_nome">Nome:</label>
                             <input disabled={isSubmit} type="text" id="auth_nome" name="nome" onChange={handleChange} value={form.nome || ""} placeholder="Insira o seu nome" />
-                        </div>
-                        <div>
+                        </FormGroup>
+                        <FormGroup>
                             <label htmlFor="auth_email">Email:</label>
                             <input disabled={isSubmit || isEdit} type="email" id="auth_email" name="email" onChange={handleChange} value={form.email || ""} placeholder="Insira sua senha" />
-                        </div>
-                        <div>
+                        </FormGroup>
+                        <FormGroup>
                             <label htmlFor="auth_password">Senha:</label>
                             <input disabled={isSubmit} type="password"
                                 id="auth_password" name="senha"
                                 onChange={handleChange}
                                 value={form.senha || ""}
                                 placeholder={isEdit ? `Atualize sua senha ` : 'Informe sua senha'} />
-                        </div>
-                        <div>
+                        </FormGroup>
+                        <FormGroup>
                             <label htmlFor="auth_nascimento">Data de Nascimento:</label>
                             <input disabled={isSubmit || isEdit} type="nascimento" id="auth_nascimento" name="nascimento" onChange={handleChange} value={form.fabricante || ""} placeholder="Insira o fabricante da cerveja" />
-                        </div>
+                        </FormGroup>
 
+                        <FormGroup>
+                            {isSubmit ? (
+                                <CustomInput type="switch" label="Ativar Usuário como administrador:" name="is_admin" id="is_admin" onChange={handleChange} checked={(!isEdit ? true : form.is_admin) || false} />
+                            ) : ""}
+                            <CustomInput type="switch" label="Usuário ativo ?" id="is_active" name="is_active" onChange={handleChange} checked={(!isEdit ? true : form.is_active) || false} />
+                        </FormGroup>
 
                         <button disabled={!formIsValid()} onClick={submitForm}>
                             {isEdit ? "Atualizar" : "Cadastrar"}

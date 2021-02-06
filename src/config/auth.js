@@ -1,10 +1,10 @@
 const TOKEN_KEY = 'phoenix_token' 
 
-const getToken = () => localStorage.getItem(TOKEN_KEY)   //responsavel por reguperar um dado que foi salvo no localstorage
+const getToken = () => localStorage.getItem(TOKEN_KEY)   
 
-const saveToken = (token) => localStorage.setItem(TOKEN_KEY, token)  //guarda um novo valor na funcao
+const saveToken = (token) => localStorage.setItem(TOKEN_KEY, token) 
 
-const removeToken = () => localStorage.removeItem(TOKEN_KEY)   //remover um dado que foi salvo 
+const removeToken = () => localStorage.removeItem(TOKEN_KEY)   
 
 
 const isAuthenticated = () => {

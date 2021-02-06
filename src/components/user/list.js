@@ -65,6 +65,7 @@ const UserList = (props) => {
                         <th>EMAIL</th>
                         <th>SENHA</th>
                         <th>NASCIMENTO</th>
+                        <th>AÇÕES</th>
                     </tr>
                 </thead>
                 <tbody>
